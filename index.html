@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login System - Register</title>
+</head>
+<body>
+    <div class="container">
+        <form id="registerForm">
+            <h2>Register</h2>
+            <label for="regUsername">Username:</label>
+            <input type="text" id="regUsername" required>
+            <label for="regPassword">Password:</label>
+            <input type="password" id="regPassword" required>
+            <button type="button" onclick="registerUser()">Register</button>
+        </form>
+        <div id="loginOption">
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+        <div id="registrationSuccess" style="display: none;">
+            <p>Registration successful! Click below to login:</p>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
